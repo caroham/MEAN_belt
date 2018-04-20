@@ -1,0 +1,27 @@
+<h3>Edit this pet</h3>
+<p class="err_msg" *ngFor="let message of messages">{{message}}</p>
+<p>{{messages}}</p>
+
+<form (submit)="submit()">
+    <p>Pet name: </p>
+    <input type="text" name="name" [(ngModel)]="pet.name"/>
+    <p>Pet type: </p>
+    <input type="text" name="type" [(ngModel)]="pet.type"/>
+    <p>Description: </p>
+    <input type="text" name="desc" [(ngModel)]="pet.desc"/>
+    <p>Skills: </p>
+    <div class="skills_input">
+      <p>Skill 1: </p>
+      <input type="text" name="skill1" [(ngModel)]="pet.skills[0].skill"/>
+      <p>Skill 2: </p>
+      <input type="text" name="skill2" [(ngModel)]="pet.skills[1].skill"/>
+      <p>Skill 3: </p>
+      <input type="text" name="skill3" [(ngModel)]="pet.skills[2].skill"/>
+    </div>
+    <div class="form-buttons">
+      <input type="submit" value="Edit pet"/>
+      <button type="button" (click)="details()">Cancel</button>
+    </div>
+</form>
+
+

@@ -1,0 +1,43 @@
+.heading h3, .heading a {
+    display: inline;
+}
+
+.heading {
+    width: 99%;
+}
+
+.heading a {
+    text-align: right;
+}
+
+.detail_cat p {
+    display: inline;
+
+}
+
+.detail_cat {
+    margin: 16px;
+}
+
+.skills p {
+    margin-right: 10px;
+}
+
+.bold_title {
+    font-weight: 800;
+}
+
+.form-buttons button {
+    padding: 10px;
+    width: 100px;
+    color: white;
+    border-radius: 4px;
+}
+
+.like_btn {
+    background: linear-gradient(lightblue, gray);
+}
+
+.adopt_btn {
+    background: linear-gradient(green, gray);
+}

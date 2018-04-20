@@ -1,0 +1,31 @@
+.skills_input {
+    margin-left: 10px;
+}
+
+form {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+form p, form input {
+    margin: 6px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.skills_input p, .skills_input input {
+    margin: 0px;
+}
+
+.form-buttons input, .form-buttons button {
+    border: none;
+    padding: 10px;
+    width: 100px;
+    margin-right: 10px;
+    background-color: lightblue;
+    color: white;
+    border-radius: 4px;
+}

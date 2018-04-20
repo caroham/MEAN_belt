@@ -1,0 +1,26 @@
+<div class="heading">
+  <h3>Details about {{pet.name}}</h3>
+  <a [routerLink]="['/']">Home</a>
+</div>
+<div class="detail_cat">
+  <p class="bold_title">Pet type: </p>
+  <p>{{pet.type}}</p>
+</div>
+<div class="detail_cat">
+  <p class="bold_title">Description: </p>
+  <p>{{pet.desc}}</p>
+</div>
+<div class="detail_cat">
+  <p class="bold_title">Skills: </p>
+  <div class="skills">
+    <p *ngFor="let skill of pet['skills']">{{skill.skill}}</p>
+  </div>
+</div>
+<div class="detail_cat">
+  <p class="bold_title">Likes: </p>
+  <p>{{pet.likes}}</p>
+</div>
+<div class="form-buttons">
+  <button class="like_btn" (click)="like()">Like this pet</button>
+  <button class="adopt_btn" (click)="delete()">Adopt this pet!</button>
+</div>

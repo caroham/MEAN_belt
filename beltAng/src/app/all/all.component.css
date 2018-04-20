@@ -1,0 +1,42 @@
+th, td, tbody, thead {
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+th {
+    background-color: lightgray;
+    color: white;
+    padding: 10px;
+    width: 140px;
+    text-align: left;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+
+tbody:nth-child(even) tr:nth-child(even)
+{
+  background-color:lightgray;
+}
+
+td {
+    padding: 10px;
+}
+
+.details_btn, .edit_btn {
+    color: white;
+    width: 60px;
+    border-radius: 4px;
+}
+
+.edit_btn {
+    background: linear-gradient(sandybrown, gray);
+}
+
+.details_btn {
+    background: linear-gradient(lightblue, gray);
+    margin-right: 10px;
+}
